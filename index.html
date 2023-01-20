@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Generator of Passwords</title>
+</head>
+
+<body>
+
+    <!-- Rounded switch
+        <label class="switch">
+            <input type="checkbox" id="switch">
+            <span class="slider round"></span>
+        </label>
+    </div> -->
+
+    <main class="container">
+        <h3>Generador de contraseñas</h3>
+        <!-- <div class="indicator"></div> -->
+        <label for="range" class="details-password">
+            <blockquote>Deslisa hacia la derecha para <strong>+</strong> y a la izquierda para <strong>-</strong>
+            </blockquote>
+            <input type="range" min="8" max="24" value="0" step="1" id="field-password">
+        </label>
+        <progress max="100" value="0" id="bar-progress"></progress>
+        <div class="headings">
+            Numero de caracteres:
+            <cite id="length"></cite>
+        </div>
+        <button id="new-password">Generar Contraseña</button>
+        <!-- <button id="save-password">Guardar Password</button> -->
+        <!-- <br><button id="copy-password">Copiar contraseña</button> -->
+        <input type="text" readonly id="output-password" width="50%">
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
