@@ -1,0 +1,23 @@
+/* propiedades de la barra de progreso */
+#bar-progress {
+    background-color: #1095c1;
+}
+
+/* propidades del icono*/
+#icon-copy {
+    font-size: 50px;
+    padding: 3px 0 0 0px;
+}
+
+#icon-copy:hover{
+    padding: 1px;
+    color: #1095c1;
+}
+
+/* propiedades de input donde se imprime la
+   contraseña generada.
+*/
+#output-password {
+    text-align: center;
+}
+
